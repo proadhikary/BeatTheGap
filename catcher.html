@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Catcher - BeatTheGap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #game-area {
+            touch-action: none;
+            /* Prevent scroll on mobile */
+            cursor: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 p-4 px-10 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <div
+                    class="h-10 w-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    OC
+                </div>
+                <span class="text-xl font-bold text-blue-700">OpportunityCatcher</span>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html"
+                class="text-blue-700 font-bold hover:text-dark-purple transition-colors uppercase text-sm tracking-wider">
+                <i class="fa fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="min-h-screen p-2 flex flex-col items-center justify-start bg-blue-50 relative overflow-hidden">
+        <div class="w-full max-w-lg relative">
+            <div class="flex justify-between items-center mb-2 px-4 pt-4">
+                <div class="text-blue-800 font-bold text-xl">Score: <span id="score">0</span></div>
+                <div class="text-red-500 font-bold text-xl">Missed: <span id="missed">0</span>/5</div>
+            </div>
+
+            <div id="game-area"
+                class="relative w-full h-[70vh] bg-white rounded-xl shadow-xl overflow-hidden border-4 border-blue-200">
+                <!-- Basket -->
+                <div id="basket"
+                    class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center text-3xl shadow-lg border-2 border-blue-500 z-10">
+                    <i class="fa-solid fa-graduation-cap text-blue-600"></i>
+                </div>
+
+                <!-- Items will be spawned here -->
+
+                <!-- Start Overlay -->
+                <div id="start-overlay"
+                    class="absolute inset-0 bg-blue-900 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6 z-20">
+                    <i class="fa-solid fa-basket-shopping text-6xl mb-4 animate-bounce"></i>
+                    <h1 class="text-3xl font-bold mb-2">Catch Opportunities!</h1>
+                    <p class="mb-6 text-blue-100">Drag the cap to catch <strong>Grants</strong> &
+                        <strong>Mentors</strong>.<br>Avoid <span class="text-red-300 font-bold">Bias</span> & <span
+                            class="text-red-300 font-bold">Stereotypes</span>!
+                    </p>
+                    <button onclick="startGame()"
+                        class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        Start Game
+                    </button>
+                    <p class="text-xs mt-4 opacity-75">Touch & Drag to move</p>
+                </div>
+
+                <!-- Game Over Overlay -->
+                <div id="game-over-overlay"
+                    class="hidden absolute inset-0 bg-red-900 bg-opacity-90 flex flex-col items-center justify-center text-white text-center p-6 z-30">
+                    <h2 class="text-4xl font-bold mb-2">Game Over!</h2>
+                    <p class="text-xl mb-6">Final Score: <span id="final-score"
+                            class="font-bold text-yellow-400">0</span></p>
+                    <button onclick="startGame()"
+                        class="bg-white text-red-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg">Try
+                        Again</button>
+                    <a href="index.html" class="mt-4 text-sm hover:underline">Exit to Main Menu</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="catcher.js"></script>
+</body>
+
+</html>

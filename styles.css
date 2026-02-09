@@ -1,0 +1,96 @@
+:root {
+    --cream: #faf7e2;
+    --dark-purple: #160b2b;
+    --pink: #dd4760;
+    --soft-cream: #f5f1df;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-purple);
+}
+
+.text-dark-purple {
+    color: var(--dark-purple);
+}
+
+.bg-purple-custom {
+    background-color: var(--dark-purple);
+}
+
+.text-pink-custom {
+    color: var(--pink);
+}
+
+.btn-pink {
+    background-color: var(--pink);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-pink:hover {
+    background-color: #e73c69;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(221, 71, 96, 0.3);
+}
+
+header {
+    background: var(--soft-cream);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: var(--soft-cream);
+    border-top: 2px solid #ddd;
+}
+
+.footer-bottom {
+    background: var(--dark-purple);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Animation Utilities */
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}

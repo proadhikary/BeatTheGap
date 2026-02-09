@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match - BeatTheGap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .memory-card {
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .memory-card-inner {
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .memory-card.flipped .memory-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .memory-card-front,
+        .memory-card-back {
+            backface-visibility: hidden;
+        }
+
+        .memory-card-back {
+            transform: rotateY(180deg);
+        }
+
+        /* Mobile optimization: Prevent double-tap zoom */
+        button,
+        .memory-card {
+            touch-action: manipulation;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 p-4 px-10 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <div
+                    class="h-10 w-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    MM
+                </div>
+                <span class="text-xl font-bold text-green-700">Memory Match</span>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html"
+                class="text-green-700 font-bold hover:text-dark-purple transition-colors uppercase text-sm tracking-wider">
+                <i class="fa fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="min-h-screen p-4 flex flex-col items-center justify-center relative overflow-hidden bg-green-50">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-dark-purple mb-2">Hidden Figures Match</h1>
+            <p class="text-gray-600">Find the pairs: Match the Pioneer with her Field!</p>
+            <div class="mt-4 flex gap-4 justify-center text-sm font-bold">
+                <span class="text-green-600">Moves: <span id="moves-count">0</span></span>
+                <span class="text-pink-600">Pairs Found: <span id="pairs-count">0</span>/6</span>
+            </div>
+        </div>
+
+        <div id="game-grid" class="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-4 max-w-2xl mx-auto w-full">
+            <!-- Cards injected by JS -->
+        </div>
+
+        <div id="win-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-xl p-8 max-w-sm w-full text-center m-4 animate-blob">
+                <div
+                    class="h-20 w-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-green-500">
+                    <i class="fa-solid fa-brain text-4xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-dark-purple mb-2">Sharper than AI!</h2>
+                <p class="text-gray-600 mb-6">You found all pairs in <span id="final-moves"
+                        class="font-bold text-green-600">0</span> moves.</p>
+                <div class="flex flex-col gap-3">
+                    <button onclick="restartGame()" class="btn-pink px-6 py-3 rounded-full font-bold">Play
+                        Again</button>
+                    <a href="index.html" class="text-gray-500 hover:text-dark-purple font-medium">Back to Menu</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="memory.js"></script>
+</body>
+
+</html>

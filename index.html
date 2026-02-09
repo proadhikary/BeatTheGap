@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatTheGap - Gender & AI Micro-Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 p-4 px-10 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <!-- Placeholder logo if original is missing -->
+            <div
+                class="h-12 w-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                CG
+            </div>
+            <span class="text-xl font-bold text-pink-custom">BeatTheGap</span>
+        </div>
+        <nav>
+            <ul class="flex gap-8 font-bold text-pink-custom uppercase text-sm tracking-wider">
+                <li><a href="index.html" class="hover:text-purple-900 transition-colors">Home</a></li>
+                <li><a href="https://stemthegapindia.com/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-purple-900 transition-colors">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="min-h-screen p-8 relative overflow-hidden">
+        <!-- Background decorative blobs -->
+        <div
+            class="absolute top-0 left-0 w-64 h-64 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute -bottom-8 left-20 w-64 h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-dark-purple">Gender & AI: Women's Day
+                Special</h1>
+            <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Explore interactive games and fun facts celebrating
+                Indian women in STEM and AI.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- App Card 1: Quiz -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 w-32 bg-pink-100 rounded-full flex items-center justify-center mb-6 text-pink-500">
+                        <i class="fa-solid fa-clipboard-question text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Gender Gap Quiz</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Test your knowledge about gender representation in Indian
+                        academia and AI. Are you aware of the numbers?</p>
+                    <a href="quiz.html" class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play
+                        Quiz</a>
+                </div>
+
+                <!-- App Card 2: Breaker Game -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div
+                        class="h-32 w-32 bg-purple-100 rounded-full flex items-center justify-center mb-6 text-purple-600">
+                        <i class="fa-solid fa-gamepad text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Bias Breaker</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Smash through the glass ceiling and break the stereotypes
+                        holding women back in this arcade-style game.</p>
+                    <a href="breaker.html"
+                        class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play Game</a>
+                </div>
+
+                <!-- App Card 3: Memory Match -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div
+                        class="h-32 w-32 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600">
+                        <i class="fa-solid fa-puzzle-piece text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Memory Match</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Match iconic women scientists with their achievements in
+                        this brain-teasing puzzle.</p>
+                    <a href="memory.html" class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play
+                        Game</a>
+                </div>
+
+                <!-- App Card 4: Opportunity Catcher -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 w-32 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
+                        <i class="fa-solid fa-basket-shopping text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Opportunity Catcher</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Catch grants and mentors while dodging bias in this
+                        fast-paced skill game.</p>
+                    <a href="catcher.html"
+                        class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play Game</a>
+                </div>
+
+                <!-- App Card 5: Fun Facts -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div
+                        class="h-32 w-32 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-yellow-600">
+                        <i class="fa-solid fa-lightbulb text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Did You Know?</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Discover inspiring stories and surprising facts about Indian
+                        women pioneers in Artificial Intelligence.</p>
+                    <a href="facts.html" class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Learn
+                        More</a>
+                </div>
+
+                <!-- App Card 6: Fact or Fiction -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div
+                        class="h-32 w-32 bg-indigo-100 rounded-full flex items-center justify-center mb-6 text-indigo-500">
+                        <i class="fa-solid fa-gavel text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Fact or Fiction?</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Swipe right for fact, left for fiction. Debunk myths about
+                        women in tech!</p>
+                    <a href="swipe.html" class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play
+                        Game</a>
+                </div>
+
+                <!-- App Card 7: Scientist Scramble -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 w-32 bg-teal-100 rounded-full flex items-center justify-center mb-6 text-teal-600">
+                        <i class="fa-solid fa-spell-check text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Scientist Scramble</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Unscramble the names of legendary women scientists from
+                        given hints.</p>
+                    <a href="scramble.html"
+                        class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play Game</a>
+                </div>
+
+                <!-- App Card 8: Timeline Tracers -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div
+                        class="h-32 w-32 bg-orange-100 rounded-full flex items-center justify-center mb-6 text-orange-600">
+                        <i class="fa-solid fa-clock-rotate-left text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Timeline Tracers</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Drag and drop historical events into correct chronological
+                        order.</p>
+                    <a href="timeline.html"
+                        class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play Game</a>
+                </div>
+
+                <!-- App Card 9: Stat Slider -->
+                <div class="card hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="h-32 w-32 bg-cyan-100 rounded-full flex items-center justify-center mb-6 text-cyan-600">
+                        <i class="fa-solid fa-sliders text-5xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Stat Slider</h2>
+                    <p class="text-gray-600 mb-6 flex-grow">Estimate the real numbers behind gender gaps in STEM and AI.
+                    </p>
+                    <a href="stats.html" class="btn-pink px-8 py-3 rounded-full font-bold uppercase tracking-wide">Play
+                        Game</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20">
+        <div class="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="font-bold text-lg mb-4 text-purple-900">BeatTheGap</h3>
+                <p class="text-sm text-gray-700">A product of the STEM the Gap organization, visualizing gender
+                    representation in
+                    Indian academia.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4 text-purple-900">Quick Links</h3>
+                <ul class="text-sm space-y-2 text-gray-700">
+                    <li><a href="https://stemthegapindia.com/research" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-pink-500">About</a></li>
+                    <li><a href="https://stemthegapindia.com/team" class="hover:text-pink-500">Meet the Team</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4 text-purple-900">Contact</h3>
+                <p class="text-sm text-gray-700"><i class="fa fa-envelope mr-2"></i> iitdcoimpact@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 STEMtheGap. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
