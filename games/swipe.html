@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fact or Fiction? - BeatTheGap</title>
+    <title>Fact or Fiction? - BeatTheGap | Swipe to Decide</title>
+    <meta name="description" content="Swipe to identify facts and fiction about STEM and gender representation. Test your knowledge in this interactive swipe game. Part of the BeatTheGap arcade.">
+    <meta name="keywords" content="fact checking, STEM facts, interactive game, critical thinking, women in science">
+    <meta name="author" content="STEMtheGap">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Fact or Fiction? - BeatTheGap">
+    <meta property="og:description" content="Swipe to identify facts and fiction about STEM and gender">
+    <meta property="og:image" content="../og-image.webp">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fact or Fiction? - BeatTheGap">
+    <meta name="twitter:description" content="Interactive swipe game about STEM facts">
+    <meta name="twitter:image" content="../og-image.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../og-image.webp">
+    <link rel="alternate icon" type="image/webp" href="../og-image.webp">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
@@ -49,17 +69,16 @@
 <body>
     <header class="sticky top-0 z-50 p-4 px-10 flex justify-between items-center bg-purple-50">
         <div class="flex items-center gap-4">
-            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                <div
-                    class="h-10 w-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    TF
+            <a href="../index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <div class="rounded-full p-1 bg-yellow-400">
+                    <img src="../og-image.webp" alt="BeatTheGap Logo" class="h-10 w-10 rounded-full object-cover">
                 </div>
-                <span class="text-xl font-bold text-indigo-700">FactOrFiction</span>
+                <span class="text-xl font-bold text-pink-custom">BeatTheGap</span>
             </a>
         </div>
         <nav>
-            <a href="index.html"
-                class="text-indigo-700 font-bold hover:text-dark-purple transition-colors uppercase text-sm tracking-wider">
+            <a href="../index.html"
+                class="text-pink-custom font-bold hover:text-purple-900 transition-colors uppercase text-sm tracking-wider">
                 <i class="fa fa-arrow-left mr-2"></i> Back to Home
             </a>
         </nav>
@@ -86,7 +105,7 @@
                 <div class="flex gap-4">
                     <button onclick="restartGame()" class="btn-pink px-6 py-2 rounded-full font-bold">Play
                         Again</button>
-                    <a href="index.html" class="text-gray-500 hover:text-dark-purple py-2">Exit</a>
+                    <a href="../index.html" class="text-gray-500 hover:text-dark-purple py-2">Exit</a>
                 </div>
             </div>
         </div>
