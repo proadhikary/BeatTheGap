@@ -25,7 +25,7 @@ const questions = [
     },
     {
         question: "Which field historically had the first computer programmer?",
-        options: ["Artificial Intelligence", "Cybersecurity", "Computer Science (Ada Lovelace)", "Robotics"],
+        options: ["Artificial Intelligence", "Cybersecurity", "Computer Science", "Robotics"],
         correct: 2,
         explanation: "Ada Lovelace wrote the first algorithm intended for a machine in the 1840s."
     }

@@ -9,20 +9,20 @@ const cardsData = [
     { id: 1, name: "Gagandeep Kang", icon: "fa-microscope", type: "person" },
     { id: 1, name: "Royal Society", icon: "fa-medal", type: "field" },
 
-    { id: 2, name: "Indira Hinduja", icon: "fa-baby", type: "person" },
-    { id: 2, name: "Test-tube Baby", icon: "fa-flask-vial", type: "field" },
+    // { id: 2, name: "Indira Hinduja", icon: "fa-baby", type: "person" },
+    // { id: 2, name: "Test-tube Baby", icon: "fa-flask-vial", type: "field" },
 
-    { id: 3, name: "Asima Chatterjee", icon: "fa-leaf", type: "person" },
-    { id: 3, name: "Medicinal Chemistry", icon: "fa-flask", type: "field" },
+    // { id: 3, name: "Asima Chatterjee", icon: "fa-leaf", type: "person" },
+    // { id: 3, name: "Medicinal Chemistry", icon: "fa-flask", type: "field" },
 
-    { id: 4, name: "Anna Mani", icon: "fa-cloud", type: "person" },
-    { id: 4, name: "Meteorology", icon: "fa-wind", type: "field" },
+    // { id: 4, name: "Anna Mani", icon: "fa-cloud", type: "person" },
+    // { id: 4, name: "Meteorology", icon: "fa-wind", type: "field" },
 
-    { id: 5, name: "Sunetra Gupta", icon: "fa-chart-line", type: "person" },
-    { id: 5, name: "Epidemiology", icon: "fa-virus", type: "field" },
+    // { id: 5, name: "Sunetra Gupta", icon: "fa-chart-line", type: "person" },
+    // { id: 5, name: "Epidemiology", icon: "fa-virus", type: "field" },
 
-    { id: 6, name: "Nandini Harinath", icon: "fa-rocket", type: "person" },
-    { id: 6, name: "Mars Mission", icon: "fa-planet-ringed", type: "field" }
+    // { id: 6, name: "Nandini Harinath", icon: "fa-rocket", type: "person" },
+    // { id: 6, name: "Mars Mission", icon: "fa-planet-ringed", type: "field" }
 ];
 
 let cards = []; // Shuffled cards
