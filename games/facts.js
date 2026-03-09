@@ -28,6 +28,12 @@ const facts = [
         text: "Debjani Ghosh is the first woman President of NASSCOM in its 30-year history. She advocates strongly for 'AI for All' and digital skilling for women across India.",
         icon: "fa-network-wired",
         color: "bg-yellow-100 text-yellow-600"
+    },
+    {
+        title: "IIT Diversity – Fiction vs. Reality",
+        text: "Less than 1% of professors at IITs come from Adivasi and Dalit communities. This contradicts claims of fair representation of marginalized communities, according to data provided to Nature through right-to-information requests (2020).",
+        icon: "fa-graduation-cap",
+        color: "bg-orange-100 text-orange-600"
     }
 ];
 

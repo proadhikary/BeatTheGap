@@ -2,7 +2,7 @@ const questions = [
     {
         text: "What percentage of STEM graduates in India are women?",
         answer: 43,
-        explanation: "India has a surprisingly high % of female STEM graduates (43%), significantly higher than the US (34%), UK (38%), and Germany (27%)."
+        explanation: "India has a surprisingly high percentage of female STEM graduates (43%), significantly higher than the US (34%), UK (38%), and Germany (27%)."
     },
     {
         text: "What percentage of the global AI workforce is female?",
@@ -12,12 +12,32 @@ const questions = [
     {
         text: "What percentage of Indian startups are led by women founders?",
         answer: 18,
-        explanation: "Approx 18% of startups in India have at least one woman founder, a number that is slowly but steadily rising."
+        explanation: "Approximately 18% of startups in India have at least one woman founder, a number that is slowly but steadily rising."
     },
     {
         text: "Women hold what percentage of leadership roles in tech companies globally?",
         answer: 28,
         explanation: "Women hold roughly 28% of leadership positions in the tech industry, showing a persistent gap at the top."
+    },
+    {
+        text: "What percentage of Nobel Prizes in Physics have been awarded to women since 1901?",
+        answer: 5,
+        explanation: "Since the Nobel Prizes began in 1901, Physics has been awarded more than 220 times. Only a handful of those laureates have been women — historically fewer than 10."
+    },
+    {
+        text: "What percentage of venture capital funding worldwide goes to startups founded solely by women?",
+        answer: 3,
+        explanation: "Globally, venture capital (VC) funding overwhelmingly goes to companies founded by all-male teams. Startups founded only by women typically receive about 2–3% of total VC dollars annually."
+    },
+    {
+        text: "What percentage of health research funding globally is allocated to women's health issues (excluding reproductive health)?",
+        answer: 5,
+        explanation: "Most public and private health research funding is not disaggregated by sex-specific impact. The percentage of funds directed toward female-specific diseases and conditions is frequently under 5% of total biomedical research budgets."
+    },
+    {
+        text: "What percentage of IIT faculty members are women?",
+        answer: 11,
+        explanation: "Across the IITs, women generally make up about 10–12% of faculty members. In core engineering departments (mechanical, electrical, civil), representation can fall below 5%."
     }
 ];
 

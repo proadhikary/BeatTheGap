@@ -1,33 +1,33 @@
 const questions = [
     {
-        question: "As of recent reports, what percentage of AI researchers globally are women?",
-        options: ["12%", "22%", "45%", "35%"],
-        correct: 1, // Index of correct answer
-        explanation: "According to the World Economic Forum, only about 22% of AI professionals globally are female, highlighting a significant gender gap in the field."
+        question: "Globally, what percentage of AI professionals are women?",
+        options: ["12%", "22%", "38%", "50%"],
+        correct: 1,
+        explanation: "Only about 1 in 5 AI professionals globally are women, showing a significant representation gap."
     },
     {
-        question: "In India, women constitute approximately what percentage of STEM graduates?",
-        options: ["15%", "25%", "43%", "55%"],
+        question: "In India, what percentage of STEM graduates are women?",
+        options: ["18%", "28%", "43%", "60%"],
         correct: 2,
-        explanation: "India actually has a high percentage of female STEM graduates at around 43%, which is higher than many developed nations. The 'leaky pipeline' issue happens later in careers."
+        explanation: "India actually has one of the highest shares of women STEM graduates globally."
     },
     {
-        question: "Who was the first woman to head an IIT (Indian Institute of Technology)?",
-        options: ["Sudha Murty", "Preeti Aghalayam", "Tessy Thomas", "Kalpana Chawla"],
+        question: "Which Indian scientist led the Mars Orbiter Mission (Mangalyaan)?",
+        options: ["Tessy Thomas", "Ritu Karidhal Srivastava", "Nandini Harinath", "Kalpana Chawla"],
         correct: 1,
-        explanation: "Prof. Preeti Aghalayam became the first woman Director-in-charge of an IIT when she was appointed to lead IIT Zanzibar in 2023."
+        explanation: "Ritu Karidhal was one of the key scientists behind India's successful Mars mission in 2014."
     },
     {
-        question: "Which of these is a common form of gender bias found in AI algorithms?",
-        options: ["Over-representation of women", "Allocating lower credit limits to women", "Always favoring men in medical diagnosis", "None of the above"],
+        question: "Which phenomenon describes invisible barriers preventing women from reaching leadership roles?",
+        options: ["Silicon Barrier", "Glass Ceiling", "Leadership Gap", "Gender Divide"],
         correct: 1,
-        explanation: "A famous case involved the Apple Card algorithm (by Goldman Sachs), which was investigated for offering significantly lower credit limits to women compared to men with similar profiles."
+        explanation: "The Glass Ceiling refers to systemic barriers preventing advancement."
     },
     {
-        question: "The 'Leaky Pipeline' associated with women in STEM refers to:",
-        options: ["Water infrastructure problems", "Women dropping out at successive career stages", "Funding leaks in research", "Data leakage in AI models"],
-        correct: 1,
-        explanation: "The 'Leaky Pipeline' metaphor describes how women are underrepresented in senior roles despite high enrollment numbers, dropping out at various stages like post-graduation, hiring, or promotion."
+        question: "Which field historically had the first computer programmer?",
+        options: ["Artificial Intelligence", "Cybersecurity", "Computer Science (Ada Lovelace)", "Robotics"],
+        correct: 2,
+        explanation: "Ada Lovelace wrote the first algorithm intended for a machine in the 1840s."
     }
 ];
 

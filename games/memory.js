@@ -6,23 +6,23 @@ const finalMovesDisplay = document.getElementById('final-moves');
 
 // Game Data: Pairs of (Name + Icon)
 const cardsData = [
-    { id: 1, name: "Kalpana Chawla", icon: "fa-shuttle-space", type: "person" },
-    { id: 1, name: "Aerospace", icon: "fa-plane-departure", type: "field" },
+    { id: 1, name: "Gagandeep Kang", icon: "fa-microscope", type: "person" },
+    { id: 1, name: "Royal Society", icon: "fa-medal", type: "field" },
 
-    { id: 2, name: "Tessy Thomas", icon: "fa-rocket", type: "person" },
-    { id: 2, name: "Missile Tech", icon: "fa-fire", type: "field" },
+    { id: 2, name: "Indira Hinduja", icon: "fa-baby", type: "person" },
+    { id: 2, name: "Test-tube Baby", icon: "fa-flask-vial", type: "field" },
 
-    { id: 3, name: "Janaki Ammal", icon: "fa-leaf", type: "person" },
-    { id: 3, name: "Botany", icon: "fa-seedling", type: "field" },
+    { id: 3, name: "Asima Chatterjee", icon: "fa-leaf", type: "person" },
+    { id: 3, name: "Medicinal Chemistry", icon: "fa-flask", type: "field" },
 
-    { id: 4, name: "Anandibai Joshi", icon: "fa-user-doctor", type: "person" },
-    { id: 4, name: "Medicine", icon: "fa-stethoscope", type: "field" },
+    { id: 4, name: "Anna Mani", icon: "fa-cloud", type: "person" },
+    { id: 4, name: "Meteorology", icon: "fa-wind", type: "field" },
 
-    { id: 5, name: "Shakuntala Devi", icon: "fa-calculator", type: "person" },
-    { id: 5, name: "Mathematics", icon: "fa-infinity", type: "field" },
+    { id: 5, name: "Sunetra Gupta", icon: "fa-chart-line", type: "person" },
+    { id: 5, name: "Epidemiology", icon: "fa-virus", type: "field" },
 
-    { id: 6, name: "Kiran Mazumdar", icon: "fa-flask-vial", type: "person" },
-    { id: 6, name: "Biotech", icon: "fa-dna", type: "field" }
+    { id: 6, name: "Nandini Harinath", icon: "fa-rocket", type: "person" },
+    { id: 6, name: "Mars Mission", icon: "fa-planet-ringed", type: "field" }
 ];
 
 let cards = []; // Shuffled cards

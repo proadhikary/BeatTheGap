@@ -8,16 +8,16 @@ const retryBtn = document.getElementById('retry-btn');
 
 const levels = [
     [
-        { id: 1, text: "Indian Science Congress Association formed", year: 1914 },
-        { id: 2, text: "Janaki Ammal receives PhD in Botany", year: 1931 },
-        { id: 3, text: "Kalpana Chawla's first space mission", year: 1997 },
-        { id: 4, text: "Chandrayaan-2 Mission (Ritu Karidhal as Mission Director)", year: 2019 }
+        { id: 1, text: "Anna Mani joins Indian Meteorological Department", year: 1948 },
+        { id: 2, text: "Asima Chatterjee receives Shanti Swarup Bhatnagar Prize", year: 1961 },
+        { id: 3, text: "Indira Hinduja delivers India's first test-tube baby", year: 1986 },
+        { id: 4, text: "Gagandeep Kang elected to Royal Society", year: 2019 }
     ],
     [
-        { id: 1, text: "Anandibai Joshi graduates as first Indian female physician", year: 1886 },
-        { id: 2, text: "Establishment of the first IIT (Kharagpur)", year: 1951 },
-        { id: 3, text: "Sudha Murty becomes first female engineer at TATA", year: 1974 },
-        { id: 4, text: "N. Kalaiselvi becomes first female DG of CSIR", year: 2022 }
+        { id: 1, text: "Indira Gandhi becomes Prime Minister of India", year: 1966 },
+        { id: 2, text: "Mother Teresa receives Nobel Prize", year: 1979 },
+        { id: 3, text: "Bachendri Pal climbs Mount Everest", year: 1984 },
+        { id: 4, text: "First women fighter pilots inducted in Indian Air Force", year: 2016 }
     ]
 ];
 

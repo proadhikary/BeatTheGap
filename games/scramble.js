@@ -1,10 +1,10 @@
 const wordData = [
-    { word: "RITU KARIDHAL", hint: "Known as the Rocket Woman of India (Chandrayaan-2)" },
-    { word: "TESSY THOMAS", hint: "First woman to head an Indian missile project (Agni-IV)" },
     { word: "KALPANA CHAWLA", hint: "First woman of Indian origin in space" },
-    { word: "JANAKI AMMAL", hint: "Pioneering Indian botanist and cytogeneticist" },
-    { word: "MIRA MURATI", hint: "Former CTO of OpenAI, behind ChatGPT" },
-    { word: "KIRAN MAZUMDAR", hint: "Founder of Biocon, India's largest biopharmaceutical company" }
+    { word: "ANANDIBAI JOSHI", hint: "First Indian woman doctor" },
+    { word: "SHAKUNTALA DEVI", hint: "Human computer" },
+    { word: "TESSY THOMAS", hint: "Missile Woman of India" },
+    { word: "RANI LAKSHMIBAI", hint: "Leader of 1857 revolt" },
+    { word: "NEHA NARKHEDE", hint: "Co-creator of Apache Kafka" }
 ];
 
 let currentIndex = 0;
