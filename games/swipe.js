@@ -3,6 +3,12 @@ const scoreEl = document.getElementById('score');
 const finalScoreEl = document.getElementById('final-score');
 const endCard = document.getElementById('end-card');
 
+const feedbackPopup = document.getElementById('feedback-popup');
+const feedbackIcon = document.getElementById('feedback-icon');
+const feedbackTitle = document.getElementById('feedback-title');
+const feedbackExplanation = document.getElementById('feedback-explanation');
+const btnNext = document.getElementById('btn-next');
+
 const factsData = [
     {
         text: "The first computer programmer was a woman.",
@@ -39,11 +45,14 @@ const factsData = [
 let cards = [];
 let currentIndex = 0;
 let score = 0;
+let isFeedbackShowing = false;
 
 function initGame() {
     container.innerHTML = '';
     container.appendChild(endCard); // Ensure end card is in DOM
     endCard.classList.add('hidden');
+    if (feedbackPopup) feedbackPopup.classList.add('hidden');
+    isFeedbackShowing = false;
 
     score = 0;
     scoreEl.textContent = '0';
@@ -76,6 +85,7 @@ function initDrag(card, dataIndex) {
     let isDragging = false;
 
     const onStart = (e) => {
+        if (isFeedbackShowing) return;
         isDragging = true;
         startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
         card.style.transition = 'none';
@@ -134,6 +144,9 @@ function initDrag(card, dataIndex) {
 }
 
 function handleSwipe(card, dataIndex, isRightSwipe) {
+    if (isFeedbackShowing) return;
+    isFeedbackShowing = true;
+
     // Remove listeners roughly handled by removing element, strictly we should remove from document
     // logic simplified for hackathon speed
 
@@ -150,15 +163,43 @@ function handleSwipe(card, dataIndex, isRightSwipe) {
 
     setTimeout(() => {
         card.remove();
-        currentIndex++;
-        if (currentIndex >= factsData.length) {
-            showEndScreen();
-        }
+        showFeedback(isCorrect, data.explanation);
     }, 300);
 }
 
+function showFeedback(isCorrect, explanation) {
+    if (feedbackPopup) {
+        feedbackPopup.classList.remove('hidden');
+        if (isCorrect) {
+            feedbackIcon.innerHTML = '<i class="fa-solid fa-circle-check text-green-500"></i>';
+            feedbackTitle.textContent = 'Correct!';
+            feedbackTitle.className = 'text-3xl font-extrabold mb-3 text-green-600';
+        } else {
+            feedbackIcon.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-500"></i>';
+            feedbackTitle.textContent = 'Incorrect!';
+            feedbackTitle.className = 'text-3xl font-extrabold mb-3 text-red-600';
+        }
+        feedbackExplanation.textContent = explanation;
+    } else {
+        alert((isCorrect ? "Correct!\n\n" : "Incorrect!\n\n") + explanation);
+        feedbackDone();
+    }
+}
+
+function feedbackDone() {
+    if (feedbackPopup) feedbackPopup.classList.add('hidden');
+    isFeedbackShowing = false;
+    currentIndex++;
+    if (currentIndex >= factsData.length) {
+        showEndScreen();
+    }
+}
+
+if (btnNext) btnNext.onclick = feedbackDone;
+
 // Button controls
 document.getElementById('btn-fact').onclick = () => {
+    if (isFeedbackShowing) return;
     const card = container.lastElementChild;
     // Don't target end-card if visible
     if (card && !card.id) {
@@ -170,6 +211,7 @@ document.getElementById('btn-fact').onclick = () => {
 };
 
 document.getElementById('btn-fiction').onclick = () => {
+    if (isFeedbackShowing) return;
     const cards = document.querySelectorAll('.tinder-card');
     const topCard = cards[cards.length - 1];
     if (topCard) handleSwipe(topCard, currentIndex, false);

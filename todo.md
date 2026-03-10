@@ -1,0 +1,2 @@
+- For all games, put "play again", and "back to menu"
+- add feedback animation on the fact or fiction

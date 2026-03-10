@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fact or Fiction? - BeatTheGap | Swipe to Decide</title>
-    <meta name="description" content="Swipe to identify facts and fiction about STEM and gender representation. Test your knowledge in this interactive swipe game. Part of the BeatTheGap arcade.">
+    <meta name="description"
+        content="Swipe to identify facts and fiction about STEM and gender representation. Test your knowledge in this interactive swipe game. Part of the BeatTheGap arcade.">
     <meta name="keywords" content="fact checking, STEM facts, interactive game, critical thinking, women in science">
     <meta name="author" content="STEMtheGap">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Fact or Fiction? - BeatTheGap">
     <meta property="og:description" content="Swipe to identify facts and fiction about STEM and gender">
     <meta property="og:image" content="../og-image.webp">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fact or Fiction? - BeatTheGap">
     <meta name="twitter:description" content="Interactive swipe game about STEM facts">
     <meta name="twitter:image" content="../og-image.webp">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="../og-image.webp">
     <link rel="alternate icon" type="image/webp" href="../og-image.webp">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
@@ -119,6 +120,17 @@
                 class="h-16 w-16 bg-white rounded-full shadow-lg text-green-500 text-2xl hover:bg-green-50 hover:scale-110 transition-transform flex items-center justify-center">
                 <i class="fa-solid fa-check"></i>
             </button>
+        </div>
+
+        <div id="feedback-popup"
+            class="hidden absolute inset-0 bg-gray-900 bg-opacity-60 z-[60] flex items-center justify-center p-4 backdrop-blur-sm">
+            <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl">
+                <div id="feedback-icon" class="text-6xl mb-4"></div>
+                <h2 id="feedback-title" class="text-3xl font-extrabold mb-3"></h2>
+                <p id="feedback-explanation" class="text-gray-700 mb-8 text-lg"></p>
+                <button id="btn-next"
+                    class="w-full bg-pink-500 text-white py-3 rounded-full font-bold text-xl shadow-md hover:bg-pink-600 transition-colors">Continue</button>
+            </div>
         </div>
     </main>
     <script src="swipe.js"></script>
